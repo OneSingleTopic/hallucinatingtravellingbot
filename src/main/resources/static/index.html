@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallucinating travel bot</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <div id="interface_div">
+        <h1>Hallucinating travelling bot</h1>
+        <div class="text_container">
+            <p>Hi, </p>
+            <p>I am the hallucinating travel bot. Please select a word and push the button to discover a new fantastic
+                location.</p>
+        </div>
+        <form action="" id="main_form">
+            <input type="text" id="main_form_text" name="new_word">
+            <input type="submit" id="main_form_submit" value="Push me">
+        </form>
+    </div>
+    <div id="map_div">
+        <div id="map" style="height: 100%;"></div>
+    </div>
+</body>
+
+</html>
